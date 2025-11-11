@@ -10,4 +10,5 @@ router.get("/:videoId", getComments);
 router.put("/:commentId", protect, updateComment);
 router.delete("/:commentId", protect, deleteComment);
 
+
 export default router;
