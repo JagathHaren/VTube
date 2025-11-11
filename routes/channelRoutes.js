@@ -13,6 +13,7 @@ import { protect } from "../middlewares/authMiddleware.js";
 import upload from "../middlewares/multer.js";
 const router = express.Router();
 
+
 // Public routes
 router.get("/", getChannels);
 router.get("/:id", getChannelById);
