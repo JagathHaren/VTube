@@ -9,4 +9,5 @@ const channelSchema = new mongoose.Schema({
   subscribers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }]
 }, { timestamps: true });
 
+
 export default mongoose.model("Channel", channelSchema);
