@@ -13,4 +13,5 @@ const videoSchema = new mongoose.Schema({
   duration: { type: String, default: "10:00" }
 }, { timestamps: true });
 
+
 export default mongoose.model("Video", videoSchema);
