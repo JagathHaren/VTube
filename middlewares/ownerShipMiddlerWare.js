@@ -9,7 +9,6 @@ export const isChannelOwner = async (req, res, next) => {
     if (channel.owner.toString() !== req.user.id) {
       return res.status(403).json({ message: "Not authorized to upload to this channel" });
     }
-
     req.channel = channel; // attach channel info to request
     next();
   } catch (error) {
