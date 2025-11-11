@@ -8,7 +8,6 @@ export const createVideo = async (req, res) => {
     if (!req.files || !req.files.video || !req.files.thumbnail) {
       return res.status(400).json({ message: "Video and thumbnail are required" });
     }
-
     // Upload thumbnail (image)
     const thumbnailUpload = await uploadToCloudinary(
       req.files.thumbnail[0].buffer,
