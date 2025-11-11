@@ -4,7 +4,6 @@ import Video from "./models/videoModel.js";
 import Channel from "./models/channelModel.js";
 
 dotenv.config();
-
 const videos = [
   {
     title: "MERN Stack Crash Course",
