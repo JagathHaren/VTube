@@ -1,6 +1,6 @@
 import Channel from "../models/channelModel.js";
 import { uploadToCloudinary } from "../utils/uploadCloudinary.js";
-//creating a channel
+//creating a channel.
 export const createChannel = async (req, res) => {
   try {
     const { name, description, banner } = req.body;
