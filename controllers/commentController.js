@@ -1,7 +1,7 @@
 import Comment from "../models/commentModel.js";
 import Video from "../models/videoModel.js";
 
-// @desc Add a comment to a video
+// @desc Add a comment to a video.
 export const addComment = async (req, res) => {
   try {
     const { text } = req.body;
